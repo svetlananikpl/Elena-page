@@ -1,0 +1,676 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Belinda Regular';
+    src: url('../fonts/Belinda%20W00%20Regular/Belinda%20W00%20Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container i {
+    font-family: FontAwesome;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.inner-wrap, .header-wrap {
+    padding-left: 105px;
+    padding-right: 105px;
+    overflow: hidden;
+}
+
+.button {
+    height: 2rem;
+    border-radius: 2rem;
+    color: white;
+    background: #50c3af;
+    font-family: "PT Sans";
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    line-height: 2rem;
+    width: 6rem;
+}
+
+.button:hover {
+    background: #4bab98;
+}
+
+.button.disable {
+    background-color: #d2d5da;
+}
+
+/*--------------------------------------------------------------------------------*/
+.header {
+    flex: none;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 588px;
+    background: url("../img/header/header_big.jpg");
+    padding: 6% 5%;
+    text-align: center;
+}
+
+.logo-nav {
+    margin-top: 1rem;
+}
+
+.logo {
+    font-family: Belinda Regular;
+    font-weight: 200;
+    color: white;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.logo:hover {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.nav {
+    margin: 3rem 0;
+}
+
+.nav a {
+    font-family: Open Sans;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 3%;
+}
+
+.nav a:hover {
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    font-family: Ubuntu;
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.header h3 {
+    font-family: 'PT Sans';
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 900;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.header h3:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 20%;
+    height: 0.2rem;
+    background: white;
+    opacity: 0.3;
+    margin-right: -100%;
+    margin-left: 2rem;
+}
+
+.header h3:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 20%;
+    height: 0.2rem;
+    background: white;
+    opacity: 0.3;
+    margin-left: -100%;
+    margin-right: 2rem;
+}
+
+.button.big {
+    width: 15rem;
+    margin: 5rem auto;
+    height: 3rem;
+    border-radius: 3rem;
+    font-size: 0.9rem;
+    line-height: 3rem;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.main {
+    flex: 1 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .section:nth-child(odd) {
+    background: #eeeeef;
+}
+
+.main .section {
+    display: flex;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main article {
+    flex: 1;
+}
+
+.main .categories article {
+    text-align: center;
+}
+
+.main h3, .main h2 {
+    font-family: "PT Sans";
+    font-weight: 900;
+    color: #384048;
+    position: relative;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.main h2::after, .main h3::after {
+    content: '';
+    height: 0.2rem;
+    width: 100%;
+    background: linear-gradient(to right, #e2e3e4, #fff);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.main .section:nth-child(odd) h2::after, .main .section:nth-child(odd) h3::after {
+    background: linear-gradient(to right, #e2e3e4, #eeeeef);
+}
+
+.main h3 {
+    font-size: 1rem;
+}
+
+.main h2 {
+    font-size: 1.2rem;
+}
+
+.main p {
+    font-family: "PT Sans";
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #787b80;
+    margin-top: 1.7rem;
+}
+
+.main .button {
+    margin-top: 2rem;
+}
+
+.main img {
+    margin-bottom: 2rem;
+}
+
+.main img:hover {
+    box-shadow: 0 0 0 0.2rem #e2e3e4;
+}
+
+.categories h3 {
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid #e2e3e4;
+    margin: 1rem 1rem 1.5rem;
+}
+
+.categories h3::after {
+    display: none;
+}
+
+.categories .icon {
+    color: #50c3af;
+    font-size: 2.5rem;
+}
+
+.categories .icon:hover {
+    color: #4bab98;
+}
+
+.templates img {
+    height: 164px;
+    width: 264px;
+}
+
+.templates p {
+    width: 264px;
+}
+
+.templates article {
+    flex-grow: 0;
+}
+
+.supported h2::before {
+    content: "\f1cd";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    color: #c6cbd1;
+    padding-right: 1rem;
+    vertical-align: middle;
+    font-weight: 100;
+}
+
+.advantages img {
+    height: 138px;
+    width: 181px;
+}
+
+.advantages p {
+    width: 138px;
+}
+
+.advantages article {
+    flex-grow: 0
+}
+
+.advantages .check {
+    color: #50c3af;
+    font-family: "PT Sans";
+    margin-top: 1rem;
+}
+
+.advantages .check:hover {
+    color: #4bab98;
+}
+
+.feedback h2::before {
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    color: #c6cbd1;
+    padding-right: 1rem;
+    vertical-align: middle;
+    font-weight: 100;
+}
+
+.send::before {
+    content: "\f1d8";
+}
+
+.tosee::before {
+    content: "\f040";
+}
+
+.forYou-section a {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.forYou-section article {
+    flex: 1.5;
+}
+
+.main .section.last-section {
+    background: #50c3af;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-section h3 {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.main .section.last-section h3::after {
+    background: #61c8b6;
+}
+
+.last-section h3::before {
+    content: "\f006";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    color: #a9ded5;
+    padding-right: 1rem;
+    vertical-align: middle;
+    font-weight: 100;
+}
+
+.brands {
+    margin-top: 1rem;
+}
+
+.brands a {
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.brands a:hover {
+    opacity: 1;
+}
+
+.brands a:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.TechCrunch {
+    font-family: "Belinda Regular";
+}
+
+.Promail, .atlaspix {
+    font-family: "Sintony";
+}
+
+.Mashable {
+    font-family: "Cabin";
+}
+
+.atlaspix {
+    font-weight: 900;
+}
+
+/*--------------------------------------------------------------------------------*/
+.footer {
+    flex: none;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #50c3af;
+}
+
+.footer .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer .footer-info {
+    display: flex;
+    flex: 2;
+    font-family: "PT Sans";
+    font-size: 0.8rem;
+    color: #aaacaf;
+    margin: 0;
+}
+
+.footer .footer-info:hover {
+    color: #8d8f92;;
+}
+
+.footer .footer-info span {
+    font-weight: bold;
+}
+
+.footer .social {
+    flex: 1;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+.footer .icon {
+    margin-left: 0.7rem;
+}
+
+.footer .icon i:hover {
+    color: #50c3af;
+}
+
+.footer .icon i {
+    font-family: FontAwesome;
+    color: #aaacaf;
+    font-size: 1.1rem;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+
+@media all and (min-width: 1024px) {
+    .container {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .header {
+        height: 628px;
+        background: url("../img/header/header_bigest.jpg");
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .header h3 {
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+
+    .button.big {
+        margin: 6rem auto 5rem;
+    }
+
+}
+
+/*--------------------------------------------------------------------------------*/
+@media all and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+    .header-wrap {
+        padding: 0;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+
+@media all and (max-width: 766px) {
+    .advantages, .templates{
+        flex-direction: column;
+    }
+
+    .advantages p {
+        width: auto;
+    }
+
+    .templates p {
+        width: auto;
+    }
+    .advantages .button, .templates .button {
+        margin-top: 1rem;
+    }
+
+    .advantages article:not(:first-child), .templates article:not(:first-child) {
+        margin-top: 3rem;
+    }
+
+}
+
+/*--------------------------------------------------------------------------------*/
+@media all and (max-width: 654px) {
+
+    .header {
+        background: url("../img/header/header_medium.jpg");
+        max-height: 400px;
+    }
+
+    .inner-wrap {
+        padding: 2rem;
+    }
+
+
+    .logo-nav {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        flex: 1;
+
+    }
+
+    .nav {
+        margin: -5px 0 0 -5px;
+        flex: 1.5;
+        flex-wrap: wrap;
+        text-align: right;
+    }
+
+    .nav a {
+        margin: 0 1%;
+    }
+
+    .button.big {
+        width: 90%;
+        margin: 3rem auto 0;
+        font-size: 1.25rem;
+    }
+
+    .brands a:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+@media all and (max-width: 558px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+@media all and (max-width: 517px) {
+
+    .header {
+        position: relative;
+    }
+
+    .header-wrap {
+        padding: 0;
+    }
+
+    .inner-wrap {
+        padding: 3rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        flex: 5;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo-nav::after {
+        content: "\f0c9";
+        font-family: FontAwesome;
+        font-size: 2.5rem;
+        height: 3rem;
+        width: 10rem;
+        line-height: 3rem;
+        text-align: right;
+        flex: 1;
+        display: block;
+    }
+
+    .logo-nav > *:not(:first-child):hover {
+        color: #50c3af;
+    }
+
+    .nav a {
+        margin: 0 1%;
+        display: block;
+    }
+
+    .main .section {
+        flex-direction: column;
+    }
+
+    .main .section article {
+        padding: 0;
+    }
+
+    .main .button {
+        margin-top: 1rem;
+    }
+    .main .section:first-child{
+        border-bottom: 1rem solid #50c3af;
+    }
+    .main .section article:not(:first-child) {
+        margin-top: 3rem;
+    }
+
+    .main .section.forYou-section article {
+        margin-top: 0;
+    }
+
+    .main .section.last-section {
+        align-items: baseline;
+    }
+
+    .brands a {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .footer {
+        height: 36px;
+    }
+
+    .footer .footer-info {
+        font-size: 0.6rem;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+@media all and (max-width: 402px) {
+
+    .inner-wrap {
+        padding: 1rem;
+    }
+
+    .main h3 {
+        font-size: 0.8rem;
+    }
+
+    .main h2 {
+        font-size: 1rem;
+    }
+
+    .brands a {
+        font-size: 1.2rem;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
